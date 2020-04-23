@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chill - Jangan ragukan cuaca...</title>
+</head>
+<body>
+  <header id="chill-app">
+    <app-bar></app-bar>
+  </header>
+
+  <main>
+    <content-banner></content-banner>
+
+    <div class="search-bar card bg-light my-4 shadow container position-relative rounded">
+      <div class="card-body">
+        <form>
+          <div class="form-search d-flex flex-md-row">
+            <input type="text" placeholder="Cek cuaca di kotamu" class="form-control form-control-lg" autofocus>
+            <button type="submit" class="btn btn-lg btn-primary ml-md-2 px-5 font-weight-bold">Cari</button>
+          </div>
+        </form>
+        <div class="mt-2">
+          <span class="msg alert-danger"></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="ajax-section position-relative container">
+        <div class="cities row row-cols-1 row-cols-md-3"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
